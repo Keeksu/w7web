@@ -18,16 +18,4 @@ router.post('/', (req, res) => {
     }
 });
 
-router.post('/', (req, res) => {
-
-    if (name === 'rke' && code === '143') {
-        res.status(200).json({ nodeData });
-    } 
-
-    else {
-        res.status(401).json({ message: 'invalid credentials' });
-    }
-});
-
-
 module.exports = router;
